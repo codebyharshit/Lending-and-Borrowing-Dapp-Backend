@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
-const { MONGO_URI } = process.env;
+// const { MONGO_URI } = process.env;
 
 // Connecting to the database
 mongoose.set("strictQuery", true);
 mongoose
-  .connect(MONGO_URI, {
+  .connect("mongodb+srv://harshit:harshit16@cluster0.wp4bidx.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
